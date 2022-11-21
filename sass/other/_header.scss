@@ -1,0 +1,31 @@
+
+@import "../config/mixin";
+@import "../config/variable";
+@import "../utilities/utilities";
+
+
+.header{
+    &__title{
+        font-size: 30px;
+        color: $feroza;
+        font-weight: 700;
+    }
+    &__contents{
+        margin: 0 auto;
+        font-size: 15px;
+        font-weight: 700;
+
+        li{
+            a{
+                margin-left: 15px;
+                &:hover{
+                    color: $meroon !important;
+                }
+            }
+        }
+    }
+
+    .button-search{
+        @include button;
+    }
+}

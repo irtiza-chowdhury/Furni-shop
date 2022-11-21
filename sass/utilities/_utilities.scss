@@ -1,0 +1,37 @@
+
+@mixin button {
+    border: none;
+    background: $feroza;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: $white;
+    border-radius: 10px;
+
+    &:hover{
+        background: $black;
+        color: $white;
+    }
+    
+}
+
+@mixin  nav-button {
+    .owl-nav{
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+        button{
+            width: 30px;
+            height: 30px;
+            border: none !important;
+            background: $white !important;
+            border-radius: 50% !important;
+
+            &:hover{
+                background: $orange !important;
+                color: $white !important;
+            }
+        } 
+    }
+}

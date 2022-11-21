@@ -1,0 +1,99 @@
+@import "../config/mixin";
+@import "../config/variable";
+@import "../utilities/utilities";
+
+.sample{
+    margin: 40px 0;
+    &__navbar{
+        padding: 40px 0;
+        &-title{
+            font-size: 20px;
+            font-weight: 700;
+            font-family: serif;
+            color: $feroza;
+        }
+        &-content{
+            font-size: 13px;
+            font-weight: 700;
+            padding-top: 30px;
+            @include flexcenter;
+            @media (max-width: 845.98px){
+                width: 100%;
+                display: block;
+            }
+            }
+    
+            li{
+                list-style: none;
+                margin-left: 20px;
+                &:first-child{
+                    margin-left: 0;
+                }
+                @media (max-width: 845.98px){
+                   margin-left: 0;
+                   padding-top: 10px;
+                }
+                a{opacity: 0.5;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+            
+        &-button{
+            button{
+                @include button;
+            }
+            @media (max-width: 845.98px){
+                width: 100%;
+                padding-top: 20px;
+            }  
+        }
+    }
+    
+
+    &__slider{
+        padding: 50px 0;
+        overflow: visible;
+
+        .item{
+            overflow: visible;
+        }
+        &-content{
+            width: 250px;
+            position: relative;
+            margin-bottom: 20px;
+
+            img{
+                height: 250px;
+            }
+
+            .content-icon{
+                position: absolute;
+                right: 20px;
+                top: -10px;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background: $orange;
+                color: $white;
+                @include flexcenter;
+            }
+            .content-body{
+                background: $light_gray;
+                text-align: center;
+
+                .price{
+                    @include flexcenter;
+                    gap: 20px;
+                    font-size: 12px;
+
+                    &-previous{
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+        
+    }

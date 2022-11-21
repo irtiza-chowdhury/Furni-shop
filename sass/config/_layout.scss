@@ -1,0 +1,12 @@
+// common css
+@import "../config/variable";
+
+.outer-body{
+    background: $light_ferza;
+    padding: 30px;
+    
+    .inner-body{
+        background: $white;
+        padding: 25px;
+    }
+}

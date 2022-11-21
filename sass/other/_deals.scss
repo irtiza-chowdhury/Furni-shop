@@ -1,0 +1,32 @@
+@import "../config/mixin";
+@import "../config/variable";
+@import "../utilities/utilities";
+
+.deals{
+    margin: 40px 0;
+    &__content{
+        padding-bottom: 20px;
+        &-title{
+            color: $feroza;
+            font-size: 20px;
+            font-weight: 700;
+            &-flame{
+                color: $orange;
+            }
+        }
+        &-icon{
+            font-size: 20px;
+        }
+        &-offer{
+            font-weight: 700;
+            padding-top: 10px;
+        }
+
+        &-text{
+            font-size: 13px;
+            padding: 10px 0;
+            opacity: 0.7;
+        }
+
+    }
+}

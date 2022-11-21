@@ -1,0 +1,65 @@
+@import "../config/mixin";
+@import "../config/variable";
+@import "../utilities/utilities";
+
+.companies{
+    margin: 40px 0;
+    background: $off_white;
+    padding: 20px 30px;
+
+    &__title{
+        @include flexcenter;
+        font-weight: 500;
+
+        @media (max-width: 767.98px){
+            display: block;
+            width: 100%;
+        }
+    }
+    &__name{
+        @include flexcenterwrap;
+        gap: 30px;
+        padding-top: 20px;
+        
+        @media (max-width: 767.98px){
+            display: block;
+            width: 100%;
+
+            &-enterpreneur{
+                padding: 20px 0;
+            }
+
+            &-fortune{
+                padding-bottom: 20px;
+            }
+            &-business{
+                padding-bottom: 20px;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: $black;
+            opacity: 0.5;
+
+            &:hover{
+                color: $meroon;
+                opacity: 1 !important;
+            }
+        }
+
+        &-enterpreneur{
+            font-family: serif;
+            font-weight: 600;
+        }
+        &-fortune{
+            font-family: 'FontAwesome';
+        }
+        &-business{    text-transform: lowercase;
+            font-family: cursive;}
+        &-mashable{
+            font-family: fantasy;
+        }
+    }
+
+}

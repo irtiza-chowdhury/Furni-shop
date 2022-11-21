@@ -1,0 +1,189 @@
+@import "../config/mixin";
+@import "../config/variable";
+@import "../utilities/utilities";
+
+.review{
+    background: $light_gray;
+    padding: 40px 0;
+    position: relative;
+
+    &__brief{
+        width: 40%;
+        margin: 0 auto;
+        position: relative;
+        padding: 30px 0;
+        &-title{
+            @include flexcenter;
+            font-size: 40px;
+            color: $feroza;
+            font-weight: 700;
+            font-family: serif;
+            text-align: center;
+
+            @media (max-width: 575.98px){
+                font-size: 30px;
+                margin-top: 50px;
+            }
+        }
+        &-text{
+            @include flexcenter;
+            font-size: 12px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        &-gift{
+            position: absolute;
+            top: 50%;
+            right: -60px;
+            color: $mezenda;
+        }
+    }
+
+    &__customer{
+        @include flexcenterwrap;
+        text-align: center;
+        gap: 60px;
+        text-align: center;
+        
+
+        &-image{
+            position: relative;
+            width: 100px;
+            @media (max-width: 767.98px){
+                width: 55%;
+            }
+            img{
+                width: 100%;
+            }
+
+            .star{
+                position: absolute;
+                color: $light_yellow;
+                top: 20%;
+                left: -15px;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background: $white;
+                @include flexcenter;
+            }
+            .semi-donut{
+                position: absolute;
+                left: -70px;
+                bottom: 30px;
+
+                @media (max-width: 469.98px){
+                    left: -48px;
+                    bottom: -59px;
+                }
+                .donut{
+                    height: 25px;
+                    width: 70px;
+                    position: relative;
+                    overflow: hidden;
+                    transform: rotate(45deg);
+
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        border: 10px solid $mezenda;
+                    }
+                }
+            }
+        }
+        &-info{
+            flex-basis: 47%;
+            &-title{
+                font-size: 20px;
+                color: $feroza;
+                font-weight: 700;
+            }
+            &-text{
+                text-align: justify;
+                padding: 10px 0;
+                font-size: 13px;
+                font-style: italic;
+            }
+
+            &-name{
+                padding-top: 30px;
+                font-weight: 700;
+                font-size: 15px;
+
+            }
+            &-details{
+                font-size: 15px;
+                opacity: 0.7;
+                padding: 10px 0;
+            }
+            &-button{
+                @include flexcenter;
+                gap: 10px;
+                button{
+                    border: none;
+                    background: $white;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    @include flexcenter;
+
+                    &:hover{
+                        background: $orange;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    &__green{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .box-1{
+            position: relative;
+            width: 100px;
+            height: 75px;
+            overflow: hidden;
+            transform: rotate(180deg);
+
+            &::after{
+                position: absolute;
+                top: 0;
+                left: 10px;
+                content: "";
+                border: 11px solid #02751b;
+                height: 115px;
+                width: 140px;
+                border-radius: 50%;
+            }
+        }
+        .box-2{
+            position: absolute;
+            width: 124px;
+            height: 110px;
+            overflow: hidden;
+            transform: rotate(182deg);
+            left: 2px;
+            top: -1px;
+            &::after{
+                position: absolute;
+                top: 0;
+                left: 0px;
+                content: "";
+                border: 11px solid #02751b;
+                height: 163px;
+                width: 214px;
+                border-radius: 50%;
+            }
+
+
+        }
+    }
+}
