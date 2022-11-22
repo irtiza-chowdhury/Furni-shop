@@ -2,11 +2,11 @@
 @mixin button {
     border: none;
     background: $feroza;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 8px 20px;
     color: $white;
-    border-radius: 10px;
+    border-radius: 4px;
 
     &:hover{
         background: $black;

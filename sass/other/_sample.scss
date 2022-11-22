@@ -7,48 +7,70 @@
     &__navbar{
         padding: 40px 0;
         &-title{
-            font-size: 20px;
-            font-weight: 700;
-            font-family: serif;
-            color: $feroza;
+            @include flexbetween;
+            @media (max-width: 350.98px){
+                display: block;
+            } 
+            &-name{
+                font-size: 20px;
+                font-weight: 700;
+                font-family: serif;
+                color: $feroza;
+            }
+            &-button{
+                @media (max-width: 350.98px){
+                    margin-top: 10px;
+                }
+                button{
+                    @include button;
+                    white-space: nowrap;
+                }
+                 
+            }
         }
         &-content{
             font-size: 13px;
             font-weight: 700;
-            padding-top: 30px;
-            @include flexcenter;
-            @media (max-width: 845.98px){
-                width: 100%;
-                display: block;
-            }
-            }
-    
-            li{
-                list-style: none;
-                margin-left: 20px;
-                &:first-child{
-                    margin-left: 0;
+            // text-align: center;
+            // @include flexcenter;
+            // gap: 10px;
+           
+            &-details{
+                margin-top: 30px;
+                gap: 10px;
+                @include flexcenter;
+                @media (max-width: 400.98px){
+                    display: block;
                 }
-                @media (max-width: 845.98px){
-                   margin-left: 0;
-                   padding-top: 10px;
-                }
-                a{opacity: 0.5;
-                    &:hover{
-                        opacity: 1;
+                &-item{                                      
+                    &-link{
+                        opacity: 0.5;
+                            &:hover{
+                                opacity: 1;
+                            }
+                        
+                    }
+                    @media (max-width: 400.98px){
+                        margin-top: 10px;
                     }
                 }
             }
-            
-        &-button{
-            button{
-                @include button;
             }
-            @media (max-width: 845.98px){
-                width: 100%;
-                padding-top: 20px;
-            }  
-        }
+    
+            // li{
+                
+            //     // margin-left: 20px;
+            //     // &:first-child{
+            //     //     margin-left: 0;
+            //     // }
+            //     // @media (max-width: 845.98px){
+            //     // //    margin-left: 0;
+            //     //    padding-top: 10px;
+            //     // }
+                
+            // }
+            
+        
     }
     
 
@@ -56,16 +78,20 @@
         padding: 50px 0;
         overflow: visible;
 
+        .owl-stage-outer{
+            padding-top: 10px;
+        }
         .item{
-            overflow: visible;
+            // overflow: hidden;
+            padding: 0 10px;
         }
         &-content{
-            width: 250px;
+            width: 80%;
             position: relative;
             margin-bottom: 20px;
 
             img{
-                height: 250px;
+                height: 300px;
             }
 
             .content-icon{

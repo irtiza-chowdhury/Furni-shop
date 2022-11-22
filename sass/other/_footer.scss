@@ -31,6 +31,10 @@
                     width: 80%;
                     margin-bottom: 20px;
                 }
+                @media (max-width:364.98px){
+                    width: 100%;
+                    white-space: nowrap;
+                }
             }
         }
     }
@@ -60,6 +64,10 @@
                     color: $white;
                     text-decoration: none;
                     margin-right: 10px;
+
+                    @media(max-width:334.98px){
+                        margin-right: 5px;
+                    }
 
                     &:last-child{
                         margin-right: 0;
