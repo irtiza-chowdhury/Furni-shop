@@ -389,6 +389,8 @@ body {
 .about__image--short {
   height: 100px;
   width: 150px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 @media (max-width: 991.98px) {
   .about__image--short {
