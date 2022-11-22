@@ -2,7 +2,8 @@
  
 Dextop view
 
-![Furni-shop-Dextop-view](https://user-images.githubusercontent.com/118212340/203253150-b0a452d1-1052-49e3-b269-3428b453d1e1.png)
+![Furni-shop-Dextop-view](https://user-images.githubusercontent.com/118212340/203255455-7c101dd5-39ff-4863-b9d8-fb4af963fe0c.png)
+
 
  
  Tab view
