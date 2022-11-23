@@ -13,6 +13,7 @@ Dextop view
  
  Mobile View
 
-![screencapture-file-D-Html-Practice-Furni-shop-index-html-2022-11-23-16_15_57](https://user-images.githubusercontent.com/118212340/203522002-e3578bc2-37aa-45e4-96b7-b79bde781175.png)
+![screencapture-file-D-Html-Practice-Furni-shop-index-html-2022-11-23-16_17_35](https://user-images.githubusercontent.com/118212340/203522411-c13f2bef-c305-4638-bd58-e7025f054c14.png)
+
 
 
