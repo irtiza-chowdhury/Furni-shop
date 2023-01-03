@@ -1,5 +1,7 @@
 # Furni-shop
  
+ Live site URL: https://furni-shop-five.vercel.app/
+ 
 Dextop view
 
 ![Furni-shop-Dextop-view](https://user-images.githubusercontent.com/118212340/203255455-7c101dd5-39ff-4863-b9d8-fb4af963fe0c.png)
